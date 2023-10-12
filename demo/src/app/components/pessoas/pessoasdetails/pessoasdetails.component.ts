@@ -25,6 +25,8 @@ export class PessoasdetailsComponent {
     this.pessoaService.save(this.pessoa).subscribe({
       next: pessoa => { // QUANDO DÁ CERTO
         this.retorno.emit(pessoa);
+        console.log("dentro de salvar");
+
       },
       error: erro => { // QUANDO DÁ ERRO
         alert('Exemplo de tratamento de erro/exception! Observe o erro no console!');
@@ -37,7 +39,8 @@ export class PessoasdetailsComponent {
   editar(){
     this.pessoaService.verify(this.pessoa).subscribe({
       next: pessoa =>{
-        this.retorno.emit(pessoa);
+        this.retorno.emit(pessoa); 
+        console.log("dentro de editar");
       },
       error: error =>{
         alert("Errro, olhar no console");
@@ -46,8 +49,7 @@ export class PessoasdetailsComponent {
     });
   }
 
-  deletar(){
 
-  }
+
 
 }

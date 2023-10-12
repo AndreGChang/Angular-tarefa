@@ -39,7 +39,6 @@ export class PessoaslistComponent {
 
   }
 
-
   exemploErro() {
 
     this.pessoaService.exemploErro().subscribe({
@@ -63,7 +62,7 @@ export class PessoaslistComponent {
   editar(modal: any, pessoa: Pessoa, indice: number) {
     this.pessoaSelecionadaParaEdicao = Object.assign({}, pessoa); //clonando o objeto se for edição... pra não mexer diretamente na referência da lista
     this.indiceSelecionadoParaEdicao = indice;
-
+    console.log("dentro de editar");
     this.modalService.open(modal, { size: 'sm' });
   }
 

@@ -12,6 +12,10 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { IndexComponent } from './components/layout/index/index.component';
 import { LoginComponent } from './components/sistema/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarroslistComponent } from './components/carros/carroslist/carroslist.component';
+import { CarrosdetailsComponent } from './components/carros/carrosdetails/carrosdetails.component';
+import { LivroslistComponent } from './components/livros/livroslist/livroslist.component';
+import { LivrosdetailsComponent } from './components/livros/livrosdetails/livrosdetails.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     IndexComponent,
-    LoginComponent
+    LoginComponent,
+    CarroslistComponent,
+    CarrosdetailsComponent,
+    LivroslistComponent,
+    LivrosdetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<p>carrosdetails works!</p>
+<button class="btn btn-primary" (click)="adicionar(modal1)">Adicionar</button>
+<form (ngSubmit)="editar()">
+  <div class="mb-3">
+      <label for="exampleInputText1" class="form-label">Modelo</label>
+      <input type="text" class="form-control" name="exampleInputText1" aria-describedby="emailHelp"
+          [(ngModel)]="carro.nome">
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Ano</label>
+      <input type="number" class="form-control" name="exampleInputNumber1" [(ngModel)]="carro.ano">
+  </div>
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<ng-template #modal1 let-modal>
+  <div class="modal-header">
+      <h4 class="modal-title">Modal title</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+
+      avsdhasdankdasdbkjasldas
+
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
+</ng-template>
